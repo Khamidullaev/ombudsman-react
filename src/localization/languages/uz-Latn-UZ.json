@@ -1,3 +1,26 @@
 {
-  sss
+  "mainPage_business-ombudsman": "Biznes ombudsman",
+  "mainPage_search": "Qidiruv",
+  "mainPage_link_advice": "Huquqiy maslahat",
+  "mainPage_link_online-reception": "Onlayn qabul",
+  "mainPage_link_anonim-appeal": "Anonim murojaat",
+  "mainPage_link_import-equimpent": "Import uskuna",
+
+  "form_sidebar-text": "O'zbekiston Respublikasi Prezidenti huzuridagi Tadbirkorlik subyektlarining huquqlari va qonuniy manfaatlarini himoya qilish bo'yicha vakilga murojaat",
+  "form_region": "Shahar",
+  "form_district": "Tuman",
+  "form_cancel": "Bekor qilish",
+  "form_send": "Jo'natish",
+
+  "anonim-form_title-1": "Holat yuz bergan hudud",
+  "anonim-form_title-2": "Faoliyatga noqonuniy aralashgan yoki korrupsiya holatiga yo'l qo'ygan mansabdor shaxs haqida ma'lumot",
+  "anonim-form_company-name": "Qaysi davlat organiga mansubligi",
+  "anonim-form_company-level": "Organ darajasi",
+  "anonim-form_person": "Mansabdor shaxs ismi sharifi",
+  "anonim-form_text": "Holat yuzasidan ma'lumot",
+
+  "advice-form_title1": "Xizmat ko'rsatish hududi",
+  "advice-form_title2": "O'zingiz haqingizda ma'lumot",
+  "advice-form_person-name": "Ism sharifingiz",
+  "advice-form_tel-number": "Telefon raqam"
 }

@@ -1,0 +1,48 @@
+@import "../../assets/variables.scss";
+
+.SearchBlock {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: $main-color;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 100%;
+
+    .search-input {
+      width: 100%;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: 1px solid silver;
+      border-radius: 35px;
+
+      &:focus {
+        box-shadow: 0px 0px 15px 0px #557A95;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .SearchBlock {
+    
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .search-box {
+      display: none;
+    }
+  }
+}
+

@@ -1,3 +1,26 @@
 {
-  sss
+  "mainPage_business-ombudsman": "Бизнес омбудсман",
+  "mainPage_search": "Қидирув",
+  "mainPage_link_advice": "Ҳуқуқий маслаҳат",
+  "mainPage_link_online-reception": "Онлайн қабул",
+  "mainPage_link_anonim-appeal": "Аноним мурожаат",
+  "mainPage_link_import-equimpent": "Импорт ускуна",
+
+  "form_sidebar-text": "Ўзбекистон Республикаси Президенти ҳузуридаги Тадбиркорлик субектларининг ҳуқуқлари ва қонуний манфаатларини ҳимоя қилиш бўйича вакилга мурожаат",
+  "form_region": "Шаҳар",
+  "form_district": "Туман",
+  "form_cancel": "Бекор қилиш",
+  "form_send": "Жўнатиш",
+
+  "anonim-form_title-1": "Ҳолат юз берган ҳудуд",
+  "anonim-form_title-2": "Фаолиятга ноқонуний аралашган ёки коррупсия ҳолатига йўл қўйган мансабдор шахс ҳақида маълумот",
+  "anonim-form_company-name": "Қайси давлат органига мансублиги",
+  "anonim-form_company-level": "Орган даражаси",
+  "anonim-form_person": "Мансабдор шахс исми шарифи",
+  "anonim-form_text": "Ҳолат юзасидан маълумот",
+
+  "advice-form_title1": "Хизмат кўрсатиш ҳудуди",
+  "advice-form_title2": "Ўзингиз ҳақингизда маълумот",
+  "advice-form_person-name": "Исм шарифингиз",
+  "advice-form_tel-number": "Telefon рақам"
 }

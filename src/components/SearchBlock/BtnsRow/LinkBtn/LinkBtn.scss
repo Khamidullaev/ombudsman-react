@@ -1,0 +1,66 @@
+@import "../../../../assets/variables.scss";
+
+.LinkBtn {
+  margin-top: 30px;
+
+  .link {
+    min-width: 150px;
+    height: 40px;
+    flex: 1;
+    border: 2px solid #d8c3a5;
+    background-color: #112d32b4;
+    color: #d8c3a5;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .link:hover {
+    color: #112d32;
+  }
+
+  .link::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #d8c3a5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition-duration: 0.3s;
+  }
+
+  .link:hover::after {
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+
+    .text {
+    z-index: 2;
+    transition-duration: 0.3s;
+  }
+
+  & + .LinkBtn {
+    margin-left: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .LinkBtn {
+    .link {
+      min-width: 200px;
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+}

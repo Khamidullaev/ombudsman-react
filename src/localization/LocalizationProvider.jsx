@@ -1,23 +1,23 @@
 import { Fragment } from 'react'
 import { IntlProvider } from 'react-intl'
-import ruRU from './languages/ru-RU.json'
-import uzLatnUZ from './languages/uz-Latn-UZ.json'
-import uzCyrlUZ from './languages/uz-Cyrl-UZ.json'
+import ru from './languages/ru-RU.json'
+import oz from './languages/uz-Latn-UZ.json'
+import uz from './languages/uz-Cyrl-UZ.json'
+import { useSelector } from 'react-redux'
 
 const messages = {
-  'ru-RU': ruRU,
-  'uz-Latn-UZ': uzLatnUZ,
-  'uz-Cyrl-UZ': uzCyrlUZ
+  ru, oz, uz
 }
 
 const LocalizationProvider = ({children}) => {
-  const locale = 'ru-RU'
+  const locale = useSelector(state => state.app.locale)
+  const language = useSelector(state => state.app.language)
 
   return (
     <IntlProvider 
       locale={locale}
       textComponent={Fragment}
-      messages={messages[locale]}
+      messages={messages[language]}
     >
       {children}
     </IntlProvider>

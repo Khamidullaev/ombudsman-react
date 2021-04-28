@@ -1,0 +1,68 @@
+@import '../../assets/variables.scss';
+
+.MainLayout {
+  width: 100%;
+  background-image: url('../../assets/images/back.png');
+  background-size: cover;
+
+  .blackout {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+
+
+    .settings-block {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+
+      
+    }
+
+    .loginLink {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      transition-duration: 0.3s;
+
+      .icon {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    .main-block {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .MainLayout {
+    background-color: $secondary-color;
+    background-image: none;
+
+    .blackout {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

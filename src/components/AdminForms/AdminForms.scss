@@ -1,0 +1,65 @@
+@import '../../assets/variables.scss';
+
+.AdminForm {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    table {
+      min-width: 100%;
+
+      thead {
+
+        th {
+          background-color: rgb(140, 168, 170);
+          padding: 10px 70px;
+          color: $secondary-color;
+        }
+      }
+
+      tr {
+        cursor: pointer;
+
+        td {
+          padding: 30px;
+          white-space: nowrap;        
+        }
+
+        &:hover {
+          background-color: #e8edf2;
+        }
+      }
+    }
+  }
+
+
+  .text {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
+    b {
+      color: $secondary-color;
+      margin-right: 25px;
+    }
+  }
+
+  .cancel-button {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: $background-color;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+

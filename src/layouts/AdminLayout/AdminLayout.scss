@@ -1,0 +1,26 @@
+.AdminLayout {
+  width: 100%;
+  background-color: #e8edf2;
+
+  .main-area {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 50px;
+
+    .content-block {
+      width: 100%;
+      flex: 1;
+      background-color: #fff;
+      box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.25);
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .AdminLayout {
+    .main-area {
+      padding: 5px;
+    }
+  }
+}

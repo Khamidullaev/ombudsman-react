@@ -1,0 +1,16 @@
+@import "../../../assets/variables.scss";
+
+.Page {
+  width: 90%;
+  background-color: $background-color;
+  max-width: 1400px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .Page {
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../../assets/variables.scss';
+
+.FormSidebar {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .emblem {
+    width: 130px;
+    margin: 20px 0;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .FormSidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    
+    .emblem {
+      display: none;
+    }
+}
+}
+
+@media (max-width: 600px) {
+  .FormSidebar {
+    display: none;
+  }
+}

@@ -1,3 +1,27 @@
 {
-  ssss
+  "mainPage_business-ombudsman": "Бизнес омбудсман",
+  "mainPage_search": "Поиск",
+  "mainPage_link_advice": "Юридическая консультация",
+  "mainPage_link_online-reception": "Онлайн прием",
+  "mainPage_link_anonim-appeal": "Анонимное обращение",
+  "mainPage_link_import-equimpent": "Импорт оборудование",
+
+  "form_sidebar-text": "Обращение к уполномоченному по защите прав и законных интересов субъектов предпринимательства при Президенте Республики Узбекистан",
+  "form_region": "Город",
+  "form_district": "Регион",
+  "form_cancel": "Отмена",
+  "form_send": "Отправить",
+
+  "anonim-form_title-1": "Территория, где произошло состояние",
+  "anonim-form_title-2": "Сведения о должностном лице, незаконно вмешавшемся в деятельность или допустившем коррупционную ситуацию",
+  "anonim-form_company-name": "К какому государственному органу относится",
+  "anonim-form_company-level": "Уровень органа",
+  "anonim-form_person": "ФИО должностного лица",
+  "anonim-form_text": "Информация о состоянии",
+
+  "advice-form_title1": "Зона обслуживания",
+  "advice-form_title2": "Информация о себе",
+  "advice-form_person-name": "Ваше имя",
+  "advice-form_tel-number": "Номер телефона"
+
 }

@@ -1,8 +1,9 @@
+import SearchBlockContainer from "../containers/SearchBlockContainer"
 
 
 const MainPage = () => {
   return (
-    <h1>MainPage</h1>
+    <SearchBlockContainer />
   )
 }
 

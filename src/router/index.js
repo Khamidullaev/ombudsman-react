@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from "react-router-dom"
 import { privateRoutes, publicRoutes } from "./routes"
 
 const AppRouter = () => {
-  const auth = true
+  const auth = useSelector(state=>state.user.isAuth)
   
   return auth ?
     (
@@ -20,7 +20,7 @@ const AppRouter = () => {
             )}
           />
         )}
-        <Redirect to={'/map'} />
+        <Redirect to={'/admin/appeal'} />
       </Switch>
     )
     :
@@ -38,7 +38,7 @@ const AppRouter = () => {
             )}
           />
         )}
-        <Redirect to={'/login'} />
+        <Redirect to={'/'} />
       </Switch>
     )
 }
