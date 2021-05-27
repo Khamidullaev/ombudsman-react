@@ -1,6 +1,7 @@
 
 import axios from "axios"
-import { setAlertMessage } from "../reducers/appReducer"
+import { BASE_URL } from "../../CONFIG"
+import { setAlertMessage, setLoader } from "../reducers/appReducer"
 import { setDistrictsList, setRegionsList, setSendingStatus } from "../reducers/formReducer"
 
 export const updateRegionsList = () => {
@@ -8,7 +9,7 @@ export const updateRegionsList = () => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: "/api/regions"
       })
       dispatch(setRegionsList(response.data))
@@ -23,7 +24,7 @@ export const updateDistictsList = (regionId) => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: `/api/districts/${regionId}`
       })
       dispatch(setDistrictsList(response.data))
@@ -36,10 +37,11 @@ export const updateDistictsList = (regionId) => {
 export const createAppeal = (data) => {
   return async dispatch => {
     dispatch(setSendingStatus('sending'))
+    dispatch(setLoader(true))
     try {
       await axios({
         method: "POST",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: "/api/appeals",
         headers: {
           "Content-Type": "application/json"
@@ -48,11 +50,11 @@ export const createAppeal = (data) => {
       })
       dispatch(setSendingStatus('success'))
       dispatch(setAlertMessage({message:"Murojaatingiz muvofaqiyatli jo'natildi", type: "info"}))   
-
+      dispatch(setLoader(false))
     } catch (error) {
-      console.log(error)
       dispatch(setSendingStatus('error'))
       dispatch(setAlertMessage({message:"Ошибка соединения. Попробуйте снова", type: "error"}))   
+      dispatch(setLoader(false))
     }
   }
 }
@@ -60,10 +62,11 @@ export const createAppeal = (data) => {
 export const createAdvice = (data) => {
   return async dispatch => {
     dispatch(setSendingStatus('sending'))
+    dispatch(setLoader(true))
     try {
       await axios({
         method: "POST",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: "/api/advices",
         headers: {
           "Content-Type": "application/json"
@@ -72,10 +75,11 @@ export const createAdvice = (data) => {
       })
       dispatch(setSendingStatus('success'))
       dispatch(setAlertMessage({message:"Murojaatingiz muvofaqiyatli jo'natildi", type: "info"}))   
-
+      dispatch(setLoader(false))
     } catch (error) {
       dispatch(setSendingStatus('error'))
       dispatch(setAlertMessage({message:"Ошибка соединения. Попробуйте снова", type: "error"}))   
+      dispatch(setLoader(false))
     }
   }
 }

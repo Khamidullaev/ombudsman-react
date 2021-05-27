@@ -34,13 +34,13 @@ export const privateRoutes = [
 
 export const publicRoutes = [
   {
-    path: '/',
+    path: '/main',
     Component: MainPage,
     layout: MainLayout
   },
 
   {
-    path: '/anonim',
+    path: '/',
     Component: AnonimPage,
     layout: MainLayout
   },

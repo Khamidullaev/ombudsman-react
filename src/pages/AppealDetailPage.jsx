@@ -1,7 +1,7 @@
 import AppealDetailForm from '../components/AdminForms/AppealDetailForm'
 
 const AppealDetailPage = () => (
-  <div className="AppealDetailPage" style={{width: '100%', display:'flex', justifyContent:'center'}}>
+  <div className="AppealDetailPage page" style={{width: '100%', display:'flex', justifyContent:'center'}}>
     <AppealDetailForm />
   </div>
 )

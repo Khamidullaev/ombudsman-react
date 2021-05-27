@@ -12,7 +12,7 @@ const AppRouter = () => {
           <Route 
             path={route.path} 
             exact={true} 
-            key={index}
+            key={route.path}
             render={routeProps => (
               <route.layout>
                 <route.Component {...routeProps}/>
@@ -30,7 +30,7 @@ const AppRouter = () => {
           <Route 
             path={route.path} 
             exact={true} 
-            key={index}
+            key={route.path}
             render={routeProps => (
               <route.layout>
                 <route.Component {...routeProps}/>
@@ -38,7 +38,7 @@ const AppRouter = () => {
             )}
           />
         )}
-        <Redirect to={'/'} />
+        <Redirect to={'/main'} />
       </Switch>
     )
 }

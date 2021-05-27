@@ -1,10 +1,11 @@
-import { SET_ALERT_MESSAGE, SET_LOCALE } from "../types"
+import { SET_ALERT_MESSAGE, SET_LOADER, SET_LOCALE } from "../types"
 
 
 const defaultState = {
   locale: "uz-Latn-UZ",
   language: "uz",
-  alertMessage: {type: null, message: ''}
+  alertMessage: {type: null, message: ''},
+  loader: false
 }
 
 export default function appReducer(state = defaultState, action) {
@@ -22,6 +23,12 @@ export default function appReducer(state = defaultState, action) {
         alertMessage: action.payload
       }
     
+    case SET_LOADER:
+      return {
+        ...state,
+        loader: action.payload
+      }
+
     default:
       return state
   }
@@ -29,3 +36,5 @@ export default function appReducer(state = defaultState, action) {
 
 export const setLocale = (locale, language) => ({type: SET_LOCALE, locale, language})
 export const setAlertMessage = message => ({type: SET_ALERT_MESSAGE, payload: message})
+export const setLoader = boolean => ({type: SET_LOADER, payload: boolean})
+

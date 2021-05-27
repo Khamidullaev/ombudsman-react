@@ -25,7 +25,7 @@ const AdminHeader = () => {
             <NavLink activeClassName="active" to="/admin/advice" className="navbar-element">Huquqiy maslahat</NavLink>
           </div>
           <div className="btn-block">
-            <button className="signUp-btn" onClick={signUp}><FontAwesomeIcon icon={faSignOutAlt}/> Sign up</button>
+            <button className="signUp-btn" onClick={signUp}><FontAwesomeIcon icon={faSignOutAlt}/>Chiqish</button>
           </div>
         </div>
 

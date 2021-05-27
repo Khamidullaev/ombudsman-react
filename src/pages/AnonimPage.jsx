@@ -3,7 +3,7 @@ import AnonimFormContainer from "../containers/AnonimFormContainer";
 
 
 const AnonimPage = () => (
-  <div className="AnoimPage" style={{width: '100%', display:'flex', justifyContent:'center'}}>
+  <div className="AnoimPage page" style={{width: '100%', display:'flex', justifyContent:'center'}}>
     <Page>
       <AnonimFormContainer />
     </Page>

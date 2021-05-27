@@ -37,7 +37,7 @@ const AnonimFormContainer = (props) => {
   }, [selectedRegion])
 
   useEffect(() => {
-    if(props.sendingStatus==="success") push('/')
+    if(props.sendingStatus==="success") push('/main')
   }, [props.sendingStatus])
 
   useEffect(() => {

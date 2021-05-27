@@ -7,11 +7,11 @@ import './LinkBtn.scss'
 const LinkBtn = ({link}) => (
   <div className="LinkBtn">
     <Link 
-          to={link.to} 
-          className="link" 
-          >
-            <p className="text"><FormattedMessage id={link.languageId} /> </p>
-        </Link>
+      to={link.to} 
+      className="link" 
+    >
+        <p className="text"><FormattedMessage id={link.languageId} /> </p>
+    </Link>
   </div>
 )
 

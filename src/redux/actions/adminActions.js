@@ -1,4 +1,5 @@
 import axios from "axios"
+import { BASE_URL } from "../../CONFIG"
 import { setAdviceDetail, setAdvicesList, setAppealDetail, setAppealsList, setPageCount } from "../reducers/adminReducer"
 import { setAlertMessage } from "../reducers/appReducer"
 
@@ -7,7 +8,7 @@ export const updateAppealsList = (pageNumber, perPage) => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: `/api/appeals?page=${pageNumber}&per_page=${perPage}`,
       })
       dispatch(setAppealsList(response.data.data))  
@@ -24,7 +25,7 @@ export const updateAdvicesList = (pageNumber, perPage) => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: `/api/advices?page=${pageNumber}&per_page=${perPage}`,
       })
       dispatch(setAdvicesList(response.data.data))  
@@ -41,7 +42,7 @@ export const updateAdviceDetail = (id) => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: `/api/advices/${id}`,
       })
       dispatch(setAdviceDetail(response.data))  
@@ -57,7 +58,7 @@ export const updateAppealDetail = (id) => {
     try {
       const response = await axios({
         method: "GET",
-        baseURL: "http://46.36.219.248:9000",
+        baseURL: BASE_URL,
         url: `/api/appeals/${id}`,
       })
       dispatch(setAppealDetail(response.data))  

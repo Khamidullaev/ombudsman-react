@@ -4,9 +4,9 @@ import LinkBtn from './LinkBtn/LinkBtn';
 
 const links = [
   {languageId: "mainPage_link_advice", to: "/advice"},
-  {languageId: "mainPage_link_online-reception", to: "/"},
-  {languageId: "mainPage_link_anonim-appeal", to: "/anonim"},
-  {languageId: "mainPage_link_import-equimpent", to: "/"},
+  {languageId: "mainPage_link_online-reception", to: "/main"},
+  {languageId: "mainPage_link_anonim-appeal", to: "/"},
+  {languageId: "mainPage_link_import-equimpent", to: "/main"},
 ]
 
 const BtnsRow = () => {

@@ -42,6 +42,7 @@ const SocialBtn = () => {
                 href={link.url}
                 className={`menu-item ${link.className}`}
                 key={index}
+                target="_blank"
               >
                 <FontAwesomeIcon icon={link.icon} className="social-icon"/>
               </a>

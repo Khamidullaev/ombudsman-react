@@ -34,7 +34,7 @@ const AdviceForm = (props) => {
         </div>
 
         <div className="btns-row">
-          <button onClick={()=>push('/')} type="button" className="btn cancel"><FormattedMessage id="form_cancel"/></button>
+          <button onClick={()=>push('/main')} type="button" className="btn cancel"><FormattedMessage id="form_cancel"/></button>
           <button type="submit" className="btn submit"><FormattedMessage id="form_send"/></button>
         </div>
       </form>
